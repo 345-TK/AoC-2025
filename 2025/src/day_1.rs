@@ -1,4 +1,4 @@
-use crate::helper::read_input;
+use helper::read_input;
 
 struct Operation {
     first: String,
@@ -37,7 +37,7 @@ fn perform_operation(current_dial: i32, direction: &str, clicks_to_make: i32) ->
     (new_dial, full_passes)
 }
 
-pub fn day_1_part_1() {
+pub fn day_1_solve() {
     let file_path = r".\inputs\input_1.txt";
     let contents = read_input(&file_path);
 
